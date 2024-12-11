@@ -1,0 +1,9 @@
+## Interface: 30300
+## Title: SpectatorFormat |cffff0000 -Depriest|r
+## Author: Depriest
+## Version: 1.0
+## Notes: Format arena spectator UI
+## SavedVariables: SPECTATOR_DB
+
+ClassDB.lua
+SpectatorFormat.lua
