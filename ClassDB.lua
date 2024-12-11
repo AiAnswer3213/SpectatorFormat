@@ -47,7 +47,7 @@ function TryGetClass(name, realm)
             print("Error: PratNamesModule not found")
             pratErrorShown = true
         end
-        return name
+        return nil
     end
 
     local class = PratNamesModule:getClass(name)
@@ -91,7 +91,9 @@ cdbframe:SetScript("OnEvent", function(self, event, ...)
     elseif event == "PLAYER_ENTERING_WORLD" then
         -- get the relam name up to first space exclusive
         playerRealm = GetRealmName():match("^(%S+)")
-        PratNamesModule = Prat.Addon:GetModule("PlayerNames")
+        if Prat then
+            PratNamesModule = Prat.Addon:GetModule("PlayerNames")
+        end
         cdbframe:UnregisterEvent("PLAYER_ENTERING_WORLD")
     end
 end)
