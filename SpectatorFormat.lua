@@ -70,7 +70,7 @@ local function ReformatName(name, realm)
   local class = TryGetClass(name, realm)
 
   if not class then
-    print("No class for " .. name)
+    --print("No class for " .. name)
     return string.format("|T%s:10:10:0:0|t%s", "Interface\\Icons\\INV_Misc_QuestionMark", name)
   end
 
