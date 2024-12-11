@@ -2,6 +2,7 @@
 2v2 should look nice for most cases
 
 Custom class DB only for the class icons. Works cross realm and enemy teams
+- Optional Prat integration for class search. `/who z-"arena" 70` and enabling some prat settings, notes in [ClassDB.lua](https://github.com/AiAnswer3213/SpectatorFormat/blob/main/ClassDB.lua)
 
 ## Installation Instructions
 1. Download the addon as a zip file.
